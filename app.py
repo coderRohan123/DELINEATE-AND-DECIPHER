@@ -18,7 +18,8 @@ groq_api_key = os.getenv('GROQ_API_KEY')
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
 # Initialize the LLM
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
+#llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="deepseek-r1-distill-llama-70b")
 
 # Define the prompt template
 prompt = ChatPromptTemplate.from_template(
@@ -137,7 +138,7 @@ if choice == "🏠 Home":
     )
 
     # Add image from the link
-    st.image("https://i.imghippo.com/files/kLO6363N.png",
+    st.image("./pic.jpg",
              caption="Delineate and Decipher: Revolutionizing Research and Problem-Solving", use_container_width=False)
 
     st.markdown(
@@ -229,7 +230,7 @@ elif choice == "🔍 Decipher":
     """)
 
     # Embed the localhost page for the math equation solving tool
-    st.components.v1.iframe("https://calc-fe.vercel.app", width=800, height=600)
+    st.components.v1.iframe("http://localhost:5173/", width=800, height=600)
 
 # About Page
 elif choice == "ℹ️ About":
