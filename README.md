@@ -71,9 +71,7 @@ LINK
 
 3. **Setup Frontend (React Canvas for Math)**
 
-```
 See backend/README.md for detailed backend setup instructions.
-```
 
 4. **Set Environment Variables**
 
