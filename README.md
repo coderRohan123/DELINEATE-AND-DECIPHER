@@ -126,6 +126,29 @@ This platform empowers researchers, students, and educators to streamline academ
 
 ## 💡 System Architecture
 
+```mermaid
+graph TD;
+    subgraph Delineate_Section["Delineate: Research Paper Analysis"]
+        A["Upload PDF"] --> B["Process PDFs & Create Embeddings"]
+        B --> C{"FAISS Vector Store"}
+        C --> D["Ask Questions"]
+        D --> E["RAG Chain: LLM + Context Retrieval"]
+        E --> F["Generate Answer"]
+    end
+
+    subgraph Decipher_Section["Decipher: Visual Math Solver"]
+        G["Draw Math Expression"] --> H["Encode Image (Base64)"]
+        H --> I["Backend: FastAPI"]
+        I --> J["Gemini API: Interpret Image"]
+        J --> K["Python: Evaluate Expression"]
+        K --> L["Return Result (LaTeX)"]
+        L --> M["Frontend: Display MathJax"]
+    end
+
+    F --> N["Unified UI (Streamlit)"]
+    M --> N
+```
+
 * Microservices architecture
 * Frontend and backend are loosely coupled via REST APIs
 * FAISS for fast vector similarity search
@@ -172,7 +195,6 @@ This platform empowers researchers, students, and educators to streamline academ
 
 **Rohan Mallick**
 B.E. Computer Science & Engineering
-VISVESVARAYA TECHNOLOGICAL UNIVERSITY
 
 ---
 
