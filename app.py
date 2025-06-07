@@ -138,7 +138,7 @@ if choice == "🏠 Home":
     )
 
     # Add image from the link
-    st.image("./pic.jpg",
+    st.image("./assets/pic.jpg",
              caption="Delineate and Decipher: Revolutionizing Research and Problem-Solving", use_container_width=False)
 
     st.markdown(
