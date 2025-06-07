@@ -162,7 +162,8 @@ graph TD;
 | Research Paper Q\&A             | Visual Math Solver                  |
 | ------------------------------- | ----------------------------------- |
 | ![Doc QA](assets/docqa.png) | ![Math Solver](assets/decipher.png) |
-| ![chat QA](assets/chatqa.png)|
+| ![chat QA](assets/chatqa.png)|![mathques](assets/decipherdrawn.png)|
+| ![dochunks](assets/docexplainability.png)|![mathans](assets/decipherans.png)|
 ---
 
 ## ✅ Testing
