@@ -116,7 +116,7 @@ GOOGLE_API_KEY=your_google_api_key
 
 | Research Paper Q\&A             | Visual Math Solver                  |
 | ------------------------------- | ----------------------------------- |
-| ![Doc QA](assets/delineate.png) | ![Math Solver](assets/decipher.png) |
+| ![Doc QA](assets/docqa.png) | ![Math Solver](assets/decipher.png) |
 
 ---
 
