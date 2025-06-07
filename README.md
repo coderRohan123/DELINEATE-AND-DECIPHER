@@ -56,31 +56,53 @@ This platform empowers researchers, students, and educators to streamline academ
 
 ### Installation
 
-1. **Clone the repository**
+1.  **Clone the repository**
 
-```bash
-git clone https://github.com/yourusername/delineate-decipher.git
-cd delineate-decipher
-```
+    ```bash
+    git clone https://github.com/yourusername/delineate-decipher.git
+    cd delineate-decipher
+    ```
 
-2. **Setup Python Backend(BACKEND FOR MATH VISUAL SOLVER)**
+2.  **Setup Main Backend (Research Paper Analysis - Delineate)**
 
-```
-LINK
-```
+    This section covers the setup for the RAG-powered backend that handles research paper analysis.
 
-3. **Setup Frontend (React Canvas for Math)**
+    #### a. Create a Python virtual environment (recommended)
+    ```bash
+    python -m venv venv-delineate
+    source venv-delineate/bin/activate # On Windows: .\\venv-delineate\\Scripts\\activate
+    ```
 
-See backend/README.md for detailed backend setup instructions.
+    #### b. Install dependencies
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-4. **Set Environment Variables**
+    #### c. Run the Streamlit application
+    ```bash
+    streamlit run app.py
+    ```
+    The Delineate (Research Paper Analysis) part of the application will then be accessible in your web browser.
 
-Create a `.env` file in the root directory:
+3.  **Setup AI Math Solver (Visual Math Problem Solving - Decipher)**
 
-```
-GROQ_API_KEY=your_groq_api_key
-GOOGLE_API_KEY=your_google_api_key
-```
+    The visual math solver is a separate module located in the `aimathsolver/` directory. It has its own dedicated frontend and backend.
+
+    Please refer to its specific `README.md` for detailed installation and setup instructions:
+    [DELINEATE-AND-DECIPHER/aimathsolver/README.md](aimathsolver/README.md)
+
+    _In summary, the steps within `aimathsolver/` involve:_\
+    _• Backend: Creating a Python virtual environment, installing dependencies from `requirements.txt`, setting `GEMINI_API_KEY` in a `.env` file, and running the FastAPI server._\
+    _• Frontend: Installing Node.js dependencies (`npm install`), setting `VITE_API_URL` in a `.env` file, and running the Vite development server (`npm run dev`)._
+
+4.  **Set Environment Variables**
+
+    Create a `.env` file in the **root directory** (`DELINEATE-AND-DECIPHER/`) with your API keys:
+
+    ```
+    GROQ_API_KEY=your_groq_api_key
+    GOOGLE_API_KEY=your_google_api_key
+    ```
 
 ---
 
