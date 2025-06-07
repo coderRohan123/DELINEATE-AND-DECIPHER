@@ -124,15 +124,13 @@ The frontend will be available at [http://localhost:5173/](http://localhost:5173
 
 ```mermaid
 graph TD;
-    A[User draws math on canvas] --> B[Canvas image encoded as base64]
-    B --> C[POST to /calculate API]
-    C --> D[Backend: Gemini API interprets image]
-    D --> E[Backend: Python evaluates expression]
-    E --> F[Result (LaTeX) sent to frontend]
-    F --> G[Frontend displays result with MathJax]
+    A["User draws math on canvas"] --> B["Canvas image encoded as base64"]
+    B --> C["POST to /calculate API"]
+    C --> D["Backend: Gemini API interprets image"]
+    D --> E["Backend: Python evaluates expression"]
+    E --> F["Result (LaTeX) sent to frontend"]
+    F --> G["Frontend displays result with MathJax"]
 ```
-
----
 
 ## 📡 API Reference
 
