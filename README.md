@@ -191,11 +191,11 @@ graph TD;
 * Collaborative workspace for shared academic research
 
 ---
+## 🎥 Demo Video
 
-## 🧑‍💻 Author
+[![YouTube Demo](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=vWgu-H2IT_M)
 
-**Rohan Mallick**
-B.E. Computer Science & Engineering
+Watch our platform in action! Click the badge above to see a demonstration of both the Research Paper Analysis and Visual Math Solving capabilities.
 
 ---
 
