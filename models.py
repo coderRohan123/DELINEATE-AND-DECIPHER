@@ -93,7 +93,7 @@ Context:
         )
         return completion.choices[0].message.content
     except Exception as e:
-        return f"⚠️ Error calling Groq API: {e}"
+        return "⚠️ Error calling Groq API"
 
 class ModelManager:
     """

@@ -54,7 +54,7 @@ class Config:
     MENU_OPTIONS = ["🏠 Home", "✍️ Delineate", "🔍 Decipher", "ℹ️ About"]
     
     # Math Solver URL
-    MATH_SOLVER_URL = "https://newfrontend-gray.vercel.app/"
+    MATH_SOLVER_URL = os.getenv("MATH_SOLVER_URL")
     
     @classmethod
     def validate_config(cls):
