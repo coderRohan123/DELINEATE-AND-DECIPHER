@@ -1,5 +1,4 @@
 # 🧠 DELINEATE AND DECIPHER
-### tryout->https://rohan016.streamlit.app/
 
 ### A Professional RAG-Powered AI Platform for Research Paper Analysis and Visual Math Problem Solving
 
@@ -122,7 +121,18 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### **4. Environment Configuration**
+#### **4. Setup AI Math Solver (Visual Math Problem Solving - Decipher)**
+
+The visual math solver is a separate module located in the `aimathsolver/` directory. It has its own dedicated frontend and backend.
+
+Please refer to its specific `README.md` for detailed installation and setup instructions:
+[DELINEATE-AND-DECIPHER/aimathsolver/README.md](aimathsolver/README.md)
+
+*In summary, the steps within `aimathsolver/` involve:*\
+*• Backend: Creating a Python virtual environment, installing dependencies from `requirements.txt`, setting `GEMINI_API_KEY` in a `.env` file, and running the FastAPI server.*\
+*• Frontend: Installing Node.js dependencies (`npm install`), setting `VITE_API_URL` in a `.env` file, and running the Vite development server (`npm run dev`).*
+
+#### **5. Environment Configuration**
 Create a `.env` file in the root directory:
 ```env
 # Required for DELINEATE functionality
@@ -132,7 +142,7 @@ GROQ_API_KEY=your_groq_api_key_here
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
-#### **5. Launch Application**
+#### **6. Launch Application**
 ```bash
 streamlit run app.py
 ```
