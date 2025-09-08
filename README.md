@@ -1,4 +1,5 @@
 # 🧠 DELINEATE AND DECIPHER
+### Tryout ---> !https://rohan016.streamlit.app/
 
 ### A Professional RAG-Powered AI Platform for Research Paper Analysis and Visual Math Problem Solving
 
