@@ -287,6 +287,17 @@ def render_decipher_content():
         Simply input your equation and get a detailed solution.
     """)
 
+    # Check if math solver URL is configured
+    if not Config.MATH_SOLVER_URL:
+        st.error("🔒 **Math Solver Access Restricted**")
+        st.warning("""
+        The visual math solver is currently not available. This feature requires proper configuration.
+        
+        **For administrators**: Please set the `MATH_SOLVER_URL` environment variable to enable this functionality.
+        """)
+        st.info("💡 **Alternative**: You can still use the 'Delineate' section for PDF analysis and research paper Q&A.")
+        return
+    
     # Embed the math equation solving tool
     st.components.v1.iframe(Config.MATH_SOLVER_URL, width=800, height=600)
 
