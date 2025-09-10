@@ -219,8 +219,8 @@ DELINEATE-AND-DECIPHER/
 ### **🔄 Processing Pipeline**
 
 ```mermaid
-graph TD;
-    subgraph Delineate_Section["DELINEATE: Advanced Document Analysis"]
+graph TD
+    subgraph Delineate_Section ["📚 DELINEATE: Advanced Document Analysis"]
         A["📄 Upload PDF"] --> B["🔍 Structure Analysis & Text Extraction"]
         B --> C["✂️ Intelligent Chunking with Metadata"]
         C --> D["🧠 Generate Embeddings (SentenceTransformer)"]
@@ -232,7 +232,7 @@ graph TD;
         I --> J["📋 Formatted Answer with Citations"]
     end
 
-    subgraph Decipher_Section["DECIPHER: Visual Math Solver"]
+    subgraph Decipher_Section ["✏️ DECIPHER: Visual Math Solver"]
         K["✏️ Draw Math Expression"] --> L["📸 Encode Image (Base64)"]
         L --> M["🚀 Backend: FastAPI"]
         M --> N["🔮 Gemini API: Interpret Image"]
@@ -244,9 +244,9 @@ graph TD;
     J --> R["🖥️ Unified Streamlit Interface"]
     Q --> R
 
-    style Delineate_Section fill:#e1f5fe
-    style Decipher_Section fill:#f3e5f5
-    style R fill:#e8f5e8
+    style Delineate_Section fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style Decipher_Section fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style R fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
 ```
 
 ### **🎯 Architecture Principles**
