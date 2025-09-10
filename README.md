@@ -406,10 +406,12 @@ When reporting issues, please include:
 If you use this platform in your research, please consider citing:
 ```bibtex
 @software{delineate_decipher,
-  title={DELINEATE AND DECIPHER: A Professional RAG Platform for Academic Research},
-  author={Rohan Mallick},
-  url={https://github.com/coderRohan123/delineate-and-decipher}
+  title   = {DELINEATE AND DECIPHER: A Professional RAG Platform for Academic Research},
+  author  = {Rohan Mallick},
+  year    = {2025},
+  url     = {https://github.com/coderRohan123/delineate-and-decipher}
 }
+
 ```
 
 ---
