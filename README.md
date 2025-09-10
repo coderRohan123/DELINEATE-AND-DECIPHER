@@ -220,7 +220,7 @@ DELINEATE-AND-DECIPHER/
 
 ```mermaid
 graph TD
-    subgraph Delineate["DELINEATE: Advanced Document Analysis"]
+    subgraph Delineate["DELINEATE:Document Analysis"]
         A["Upload PDF"] --> B["Structure Analysis & Text Extraction"]
         B --> C["Intelligent Chunking with Metadata"]
         C --> D["Generate Embeddings"]
@@ -232,7 +232,7 @@ graph TD
         I --> J["Formatted Answer with Citations"]
     end
 
-    subgraph Decipher["DECIPHER: Visual Math Solver"]
+    subgraph Decipher["DECIPHER: Visual Math"]
         K["Draw Math Expression"] --> L["Encode Image"]
         L --> M["Backend FastAPI"]
         M --> N["Gemini API Interpret"]
