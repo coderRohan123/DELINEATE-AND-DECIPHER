@@ -7,7 +7,7 @@ import fitz  # PyMuPDF
 import streamlit as st
 import re
 from typing import List, Dict, Tuple
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import Config
 
 def extract_structured_text(pdf_file) -> Tuple[List[Dict], int]:
