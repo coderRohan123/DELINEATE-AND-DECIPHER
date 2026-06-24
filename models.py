@@ -86,7 +86,7 @@ Context:
             temperature=Config.GROQ_TEMPERATURE,
             max_completion_tokens=Config.GROQ_MAX_TOKENS,
             top_p=Config.GROQ_TOP_P,
-            reasoning_effort=Config.GROQ_REASONING_EFFORT,
+            #reasoning_effort=Config.GROQ_REASONING_EFFORT,
             stream=Config.GROQ_STREAM,
             stop=None,
             #tools=Config.GROQ_TOOLS
