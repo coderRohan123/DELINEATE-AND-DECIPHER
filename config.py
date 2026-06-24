@@ -20,7 +20,7 @@ class Config:
     RERANKING_MODEL_NAME = 'cross-encoder/ms-marco-MiniLM-L-6-v2'
     
     # Groq API Configuration
-    GROQ_MODEL = "openai/gpt-oss-20b"
+    GROQ_MODEL = "groq/compound"
     GROQ_TEMPERATURE = 1
     GROQ_MAX_TOKENS = 8192
     GROQ_TOP_P = 1
