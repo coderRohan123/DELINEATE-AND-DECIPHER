@@ -89,11 +89,11 @@ Context:
             reasoning_effort=Config.GROQ_REASONING_EFFORT,
             stream=Config.GROQ_STREAM,
             stop=None,
-            tools=Config.GROQ_TOOLS
+            #tools=Config.GROQ_TOOLS
         )
         return completion.choices[0].message.content
     except Exception as e:
-        return "⚠️ Error calling Groq API"
+        return f"⚠️ Error calling Groq API:{str(e)}"
 
 class ModelManager:
     """
