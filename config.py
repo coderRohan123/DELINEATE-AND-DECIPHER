@@ -26,7 +26,7 @@ class Config:
     GROQ_TOP_P = 1
     GROQ_REASONING_EFFORT = "medium"
     GROQ_STREAM = False
-    GROQ_TOOLS = [{"type": "code_interpreter"}, {"type": "browser_search"}]
+    #GROQ_TOOLS = [{"type": "code_interpreter"}, {"type": "browser_search"}]
     
     # Text Processing Configuration
     TEXT_SPLITTER_CONFIG = {
